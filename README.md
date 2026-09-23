@@ -99,7 +99,7 @@ The application displays a calculator window where users can:
 
 ## 👨‍💻 Author
 
-Ayushman Bosu Roy
+Aditya Chaurasiya
 
 **Course:** B.Tech (Artificial Intelligence)
 
