@@ -101,6 +101,6 @@ The application displays a calculator window where users can:
 
 Aditya Chaurasiya
 
-**Course:** B.Tech (Artificial Intelligence)
+**Course:** B.Tech (CSE)
 
 **Experiment:** Java Swing MVC Calculator
