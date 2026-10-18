@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☕ Java Programming Lab
+# Java Programming Lab
 
 ### A hands-on collection of every major Java technology — from Swing GUIs to distributed computing and full-stack Spring Boot.
 
@@ -15,7 +15,7 @@
 ![Experiments](https://img.shields.io/badge/Experiments-07-blue?style=flat-square)
 ![Projects](https://img.shields.io/badge/Projects-01-success?style=flat-square)
 ![Education](https://img.shields.io/badge/Purpose-Educational-lightgrey?style=flat-square)
-![Made with ❤](https://img.shields.io/badge/Made%20with-❤-ff69b4?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
 
 <br/>
 
@@ -27,24 +27,24 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [About](#-about)
-- [Student Details](#-student-details)
-- [Tech Stack](#-tech-stack)
-- [Experiments at a Glance](#-experiments-at-a-glance)
-- [Detailed Walkthrough](#-detailed-walkthrough)
-- [Capstone Project](#-capstone-project)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Key Takeaways](#-key-takeaways)
-- [Roadmap](#-roadmap)
-- [Author](#-author)
-- [License](#-license)
+- [About](#about)
+- [Student Details](#student-details)
+- [Tech Stack](#tech-stack)
+- [Experiments at a Glance](#experiments-at-a-glance)
+- [Detailed Walkthrough](#detailed-walkthrough)
+- [Capstone Project](#capstone-project)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Key Takeaways](#key-takeaways)
+- [Roadmap](#roadmap)
+- [Author](#author)
+- [License](#license)
 
 ---
 
-## 📖 About
+## About
 
 This repository is the complete record of my **Java Programming Lab** coursework. It is not a collection of toy snippets — each experiment is a working, self-contained project that applies a different corner of the Java ecosystem to a real problem.
 
@@ -56,7 +56,7 @@ The goal is simple: understand *why* Java is still used everywhere — write onc
 
 ---
 
-## 🎓 Student Details
+## Student Details
 
 <table>
 <tr><td>
@@ -83,7 +83,7 @@ The goal is simple: understand *why* Java is still used everywhere — write onc
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 <table>
 <tr>
@@ -120,7 +120,7 @@ The goal is simple: understand *why* Java is still used everywhere — write onc
 
 ---
 
-## 📊 Experiments at a Glance
+## Experiments at a Glance
 
 | # | Experiment | Core Technology | Type |
 |:-:|:---|:---|:---|
@@ -131,11 +131,11 @@ The goal is simple: understand *why* Java is still used everywhere — write onc
 | 05 | [TCP Client-Server](#experiment-05--multithreaded-tcp-client--server) | Sockets + Threads | Networking |
 | 06 | [HTTP Request Handling](#experiment-06--http-request-handling-with-servlets) | Jakarta Servlets | Web |
 | 07 | [Student Portal](#experiment-07--web-based-student-portal) | JSP + Servlets | Web (MVC) |
-| 🛒 | [E-Commerce Platform](#-capstone-project) | Spring Boot + JPA | Full Stack |
+| — | [E-Commerce Platform](#capstone-project) | Spring Boot + JPA | Full Stack |
 
 ---
 
-## 🔍 Detailed Walkthrough
+## Detailed Walkthrough
 
 ### Experiment 01 · Student Registration Form
 
@@ -321,7 +321,7 @@ mvn org.apache.tomcat.maven:tomcat7-maven-plugin:run
 
 ---
 
-## 🛒 Capstone Project
+## Capstone Project
 
 ### E-Commerce Platform — *Nyxora Shop*
 
@@ -345,7 +345,7 @@ mvn spring-boot:run
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 java-class/
@@ -405,7 +405,7 @@ java-class/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -435,11 +435,11 @@ javac <File>.java
 java <ClassName>
 ```
 
-> ⚠️ Experiments 01 and 02 expect MySQL on `localhost:3306` with user `root` / password `1234`. Update the constants at the top of each source file if your setup differs.
+> Experiments 01 and 02 expect MySQL on `localhost:3306` with user `root` / password `1234`. Update the constants at the top of each source file if your setup differs.
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 
 | Concept | Where It Was Learned |
 |:---|:---|
@@ -454,7 +454,7 @@ java <ClassName>
 
 ---
 
-## 🗺 Roadmap
+## Roadmap
 
 - [ ] Add per-experiment screenshots and sample output
 - [ ] Write a standalone `README.md` inside each experiment folder
@@ -465,7 +465,7 @@ java <ClassName>
 
 ---
 
-## ✍️ Author
+## Author
 
 <div align="center">
 
@@ -480,7 +480,7 @@ java <ClassName>
 
 ---
 
-## 📄 License
+## License
 
 This repository is intended for **educational and academic purposes**. Reuse and redistribution should follow the permissions and licenses of the original dependencies and libraries used.
 
@@ -488,7 +488,7 @@ This repository is intended for **educational and academic purposes**. Reuse and
 
 <div align="center">
 
-### ☕ *Learn. Implement. Improve.*
+### *Learn. Implement. Improve.*
 
 <sub>© 2026 Aditya Chaurasiya · Java Programming Lab · All rights reserved.</sub>
 
