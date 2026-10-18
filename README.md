@@ -21,14 +21,16 @@ The purpose of this repository is to demonstrate practical implementation of Jav
 
 ## Repository Structure
 
-| Directory                   | Description                                                                 |
-| --------------------------- | --------------------------------------------------------------------------- |
-| `RMI/`                      | Programs related to Java Remote Method Invocation and distributed computing |
-| `calculator/`               | Calculator application demonstrating Java programming concepts              |
-| `jdbc/`                     | Database connectivity and operations using JDBC                             |
-| `jsp-servlet-student-main/` | Student portal web application using JSP and Servlets                       |
-| `registration portal/`      | Registration portal project                                                 |
-| `servlet/`                  | Web application development using Java Servlets                             |
+| Directory                              | Description                                                        |
+| -------------------------------------- | ------------------------------------------------------------------ |
+| `Experiment-01-Registration-Form-Using-Java/`       | Registration form application with JDBC-based student database |
+| `Experiment-02-Database-Operations-With-JDBC/`      | Database connectivity and operations using JDBC               |
+| `Experiment-03-MVC-Pattern-Based-Calculator/`       | Calculator application following the MVC pattern              |
+| `Experiment-04-Distributed-Calculator-Using-RMI/`   | Distributed calculator using Java RMI                         |
+| `Experiment-05-Multithreaded-TCP-Client-Server/`    | Multithreaded TCP client-server application                   |
+| `Experiment-06-HTTP-Request-Handling-With-Servlets/`| HTTP request handling using Java Servlets                     |
+| `Experiment-07-Web-Based-Student-Portal/`           | Student portal web application using JSP and Servlets         |
+| `Java-Project-E-Commerce-Platform/`                 | E-commerce platform built with Spring Boot                   |
 
 The implementation details and execution requirements may vary for each experiment.
 
