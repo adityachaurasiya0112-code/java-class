@@ -91,10 +91,6 @@ cd Experiment-02-Database-Operations-With-JDBC
 mvn compile exec:java -Dexec.mainClass=Jdbcapp
 ```
 
-**Screenshot**
-
-![JDBC console — add student and view all records](screenshots/experiment-02-jdbc-operations.png)
-
 ---
 
 ### Experiment 03 — MVC Pattern Calculator
@@ -153,12 +149,6 @@ java server
 java client
 ```
 
-**Screenshots**
-
-![RMI server — remote object bound to registry](screenshots/experiment-04-rmi-server.png)
-
-![RMI client — results returned from the remote JVM](screenshots/experiment-04-rmi-client.png)
-
 ---
 
 ### Experiment 05 — Multithreaded TCP Client-Server
@@ -187,12 +177,6 @@ java Server
 # Terminal 2
 java Client
 ```
-
-**Screenshots**
-
-![TCP server — accepts clients, each handled in its own thread](screenshots/experiment-05-tcp-server.png)
-
-![TCP client — connected and exchanging messages with the server](screenshots/experiment-05-tcp-client.png)
 
 ---
 
