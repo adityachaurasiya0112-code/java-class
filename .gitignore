@@ -1,1 +1,8 @@
 **/apache-tomcat-*/
+
+# Build output
+**/target/
+*.class
+
+# H2 database files (Capstone)
+Java-Project-E-Commerce-Platform/data/

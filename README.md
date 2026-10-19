@@ -51,21 +51,25 @@ A desktop application built with Java Swing that collects student details and st
 
 ```
 Experiment-01-Registration-Form-Using-Java/
-├── registration portalStudentRegistrationSystem.java
-└── registration portalstudent_database.sql
+├── StudentRegistrationSystem.java
+└── student_database.sql
 ```
 
 **How to run**
 
 ```bash
 # Create the database schema
-mysql -u root -p < "Experiment-01-Registration-Form-Using-Java/registration portalstudent_database.sql"
+mysql -u root -p < Experiment-01-Registration-Form-Using-Java/student_database.sql
 
 # Compile and run
 cd Experiment-01-Registration-Form-Using-Java
-javac -cp ".:mysql-connector-j-9.5.0.jar" "registration portalStudentRegistrationSystem.java"
+javac -cp ".:mysql-connector-j-9.5.0.jar" StudentRegistrationSystem.java
 java -cp ".:mysql-connector-j-9.5.0.jar" StudentRegistrationSystem
 ```
+
+**Screenshot**
+
+![Student Registration Form — Swing GUI](screenshots/experiment-01-registration-form.png)
 
 ---
 
@@ -87,6 +91,10 @@ cd Experiment-02-Database-Operations-With-JDBC
 mvn compile exec:java -Dexec.mainClass=Jdbcapp
 ```
 
+**Screenshot**
+
+![JDBC console — add student and view all records](screenshots/experiment-02-jdbc-operations.png)
+
 ---
 
 ### Experiment 03 — MVC Pattern Calculator
@@ -97,10 +105,10 @@ A calculator application that demonstrates the Model-View-Controller design patt
 
 | Layer | File | Responsibility |
 | --- | --- | --- |
-| Model | `model.java` | Arithmetic operations — addition, subtraction, multiplication, division |
-| View | `view.java` | User interface with text fields and operation buttons |
-| Controller | `controller.java` | Handles user events and coordinates between model and view |
-| Entry point | `main.java` | Creates and connects all three components |
+| Model | `CalculatorModel.java` | Arithmetic operations — addition, subtraction, multiplication, division |
+| View | `CalculatorView.java` | User interface with text fields and operation buttons |
+| Controller | `CalculatorController.java` | Handles user events and coordinates between model and view |
+| Entry point | `Main.java` | Creates and connects all three components |
 
 The three layers are independent of each other. The model contains no user interface code, and the view contains no business logic.
 
@@ -108,9 +116,13 @@ The three layers are independent of each other. The model contains no user inter
 
 ```bash
 cd Experiment-03-MVC-Pattern-Based-Calculator
-javac main.java model.java view.java controller.java
-java main
+javac Main.java CalculatorModel.java CalculatorView.java CalculatorController.java
+java Main
 ```
+
+**Screenshot**
+
+![MVC Calculator — Swing GUI with result field](screenshots/experiment-03-mvc-calculator.png)
 
 ---
 
@@ -125,13 +137,13 @@ A distributed application that allows a client to call methods on a server objec
 | `calculator.java` | Remote interface defining the methods available on the server |
 | `server.java` | Implements and binds the remote object to the RMI registry |
 | `client.java` | Looks up the remote object and invokes its methods |
-| `Sample.java` | Demonstrates basic usage |
+| `CalculatorImple.java` | Implementation of the remote interface |
 
 **How to run**
 
 ```bash
 cd Experiment-04-Distributed-Calculator-Using-RMI
-javac calculator.java server.java client.java Sample.java
+javac calculator.java server.java client.java CalculatorImple.java
 
 # Terminal 1
 rmiregistry &
@@ -140,6 +152,12 @@ java server
 # Terminal 2
 java client
 ```
+
+**Screenshots**
+
+![RMI server — remote object bound to registry](screenshots/experiment-04-rmi-server.png)
+
+![RMI client — results returned from the remote JVM](screenshots/experiment-04-rmi-client.png)
 
 ---
 
@@ -169,6 +187,12 @@ java Server
 # Terminal 2
 java Client
 ```
+
+**Screenshots**
+
+![TCP server — accepts clients, each handled in its own thread](screenshots/experiment-05-tcp-server.png)
+
+![TCP client — connected and exchanging messages with the server](screenshots/experiment-05-tcp-client.png)
 
 ---
 
@@ -201,6 +225,16 @@ mvn clean package
 
 The build produces `target/servlet.war`, which can be deployed to any Jakarta Servlet 6.x container.
 
+**Screenshots**
+
+Login page served at `/servlet/`:
+
+![Servlet login page](screenshots/experiment-06-login-page.png)
+
+`HelloServlet` response at `/servlet/hello`:
+
+![HelloServlet HTTP response](screenshots/experiment-06-hello-servlet.png)
+
 ---
 
 ### Experiment 07 — Web-Based Student Portal
@@ -225,6 +259,16 @@ cd Experiment-07-Web-Based-Student-Portal/jsp-servlet-student-main
 mvn clean package
 mvn org.apache.tomcat.maven:tomcat7-maven-plugin:run
 ```
+
+**Screenshots**
+
+Portal login page:
+
+![Student portal login](screenshots/experiment-07-portal-login.png)
+
+`student.jsp` — JSP view of the portal:
+
+![Student portal JSP form](screenshots/experiment-07-student-jsp.png)
 
 ---
 
@@ -258,6 +302,10 @@ mvn spring-boot:run
 ```
 
 Then open `http://localhost:8080` in a browser.
+
+**Screenshot**
+
+![Nyxora Store — product listing rendered by Thymeleaf](screenshots/capstone-ecommerce-store.png)
 
 ---
 
@@ -319,7 +367,6 @@ Each experiment folder is self-contained. Navigate into any folder and follow th
 
 ## Future Improvements
 
-- Add screenshots and sample output for each experiment
 - Add a separate README file inside every experiment folder
 - Add unit tests using JUnit for the calculator and database layers
 - Move database credentials to environment variables
